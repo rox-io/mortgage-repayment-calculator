@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    --primary-color: hsl(202, 55%, 16%);
+    --primary-text: 12px;
+}
+
+
+.section-a {
+    font-weight: 500;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+a {
+    color: hsl(200, 26%, 54%);
+    font-size: var(--primary-text);
+}
+
+label {
+    margin: 1em 0 .5em 0;
+    color:  hsl(200, 26%, 54%);
+}
+
+label, input {
+    display: block;
+    font-size: var(--primary-text);
+}
+input[type=text] {
+    
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.section-b {
+    background-color: var(--primary-color);
+}
+
+.section-b-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-input {
+    border: 1px solid rgb(150, 148, 150);
+    border-radius: 3px;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    /* padding-left: 1em; */
+    width: 100%;
+    margin: 0;
+}
+
+.input-left-padding {
+    padding-left: 2.5em;
+}
+
+.input-text-a {
+    top: 43%;
+    left: 0.1%;
+}
+
+.input-container {
+    position: relative;
+}
+.input-text-a, .input-text-b, .input-text-c {
+    position: absolute;
+    background-color: hsl(202,86%, 94%);
+    padding: .540em;
+    font-size: var(--primary-text);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.input-text-b {
+    top: 43%;
+    right: 0;
+}
+
+.input-text-c {
+    top: 28%;
+    right: 0;
+}
+
+.radio-input, .radio-label {
+    display:inline;
+}
+
+.radio-border {
+    border: 1px solid rgb(150, 148, 150);
+    border-radius: 3px;
+    padding: .5em .9em;
+    width: 100%;
+}
+
+.radio-label {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-left: .4em;
+}
+
+.radio-input-b {
+    margin: .6em 0 1em 0;
+}
+
+.btn {
+    background-color: hsl(61, 70%, 52%);
+    padding: .5em 3em;
+    border-radius: 50px;
+    border-style: none;
+    width: 100%;
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 2em;
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.section-b p, h2 {
+    color: white;
+    text-align: center;
+}
+
+.completed-results {
+    display: none;
+}

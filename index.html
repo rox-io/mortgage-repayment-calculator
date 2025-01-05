@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Mortgage repayment calculator</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,43 +21,62 @@
   </style>
 </head>
 <body>
+  <main>
+    <section class="section-a">
+      <div class="container">
+        <h1>Mortgage Calculator</h1>
+        <a href="">Clear All</a>
+        <div class="form">
+          <form action="">
+            <div class="input-container">
+              <label for="amount">Mortgage Amount</label>
+              <input type="text" name="amount" class="text-input input-left-padding"><span class="input-text-a">$</span>
+            </div>
+            <div class="input-container">
+              <label for="term">Mortgage Term</label>
+              <input type="text" name="term" class="text-input"><span class="input-text-b">Years</span>
+            </div>
+            <div class="input-container">
+              <label for="interest">Interest Rate</label>
+              <input type="text" name="interest" class="text-input">
+              <label for="type">Mortgage Type</label><span class="input-text-c">%</span>
+            </div>
 
-  Mortgage Calculator
-  Clear All
+            <div class="radio-border radio-input-a">
+              <input type="radio" name="type" id="" class="radio-input"><label for="type" class="radio-label">Repayment</label>
+      
+            </div>
+            <div class="radio-border radio-input-b">
+              <input type="radio" name="type" id="" class="radio-input"><label for="type" class="radio-label">Interest Only</label>
+            </div>
+            <button class="btn">Calculate Repayments</button>
+          </form>
+        </div>
+      </div>
 
-  Mortgage Amount
-
-  Mortgage Term
-
-  Interest Rate
-
-  Mortgage Type
-  Repayment
-  Interest Only
-
-  Calculate Repayments
-
-  <!-- Empty results start -->
-
-  Results shown here
-
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
-
-  <!-- Empty results end -->
-
-  <!-- Completed results start -->
-
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
-
-  <!-- Completed results end -->
+    </section>
+    <section class="section-b">
+      <div class="container">
+        <!-- Empty results start -->
+        <div class="section-b-align">
+          <img src="assets/images/illustration-empty.svg" alt="">
+          <h2>Results shown here</h2>
+          <p> Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        </div>
+      </div>
+      <div class="completed-results">
+        <h2>Your results</h2>
+        <p>
+          Your results are shown below based on the information you provided. 
+          To adjust the results, edit the form and click “calculate repayments” again.
+        </p>
+        <div class="results-card">
+          <p>Your monthly repayments</p>
+          <p>Total you'll repay over the term</p>
+        </div>
+      </div>
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
